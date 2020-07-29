@@ -1,0 +1,16 @@
+<img src="/static/images/head.jpg" alt="头像" class="top_logo">
+
+<h3><a href="/" class="top_title">刘小备_Blog</a></h3>
+
+<ul class="navigation">
+    <li><a href="/" class="menu">文章</a></li>
+    <li><a href={% url 'link' %} class="menu">友情链接</a></li>
+    <li><a href={% url 'comment' %} class="menu">留言板</a></li>
+    <li><a href={% url 'about' %} class="menu">关于</a></li>
+    <li><a href="/admin" class="menu">Login</a></li>
+</ul>
+
+<form action={% url 'search' %} method="GET" role="search" id="searchform">
+    <input type="search" name="q" placeholder="Search" required class="search">
+    <button type="submit" class="search_button">搜索</button>
+</form>

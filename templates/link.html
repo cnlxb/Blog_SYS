@@ -1,0 +1,25 @@
+<link rel="stylesheet" href="/static/css/link.css" type="text/css">
+
+{% extends "base_2.html" %}
+{% block title %}友情链接{% endblock title %}
+
+{% block content %}
+    <div class="link_box">
+
+        {% for link in links %}
+
+            <div class="card">
+                <div class="avatar">
+                    <img src={{link.picture}} alt="" class="link_avatar">
+                </div>
+
+                <div class="message">
+                    <h3><a href="{{link.address}}" target="_blank" class="link_title">@{{link.name}}</a></h3>
+                    <p class="link_about">{{link.about}}</p>
+                </div>
+            </div>
+
+        {% endfor %}
+
+    </div>
+{% endblock content %}

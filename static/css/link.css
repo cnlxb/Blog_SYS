@@ -1,0 +1,66 @@
+.link_box {
+    width: 900px;
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+/*链接卡片*/
+.card {
+    width: 400px;
+    height: 150px;
+    background-color:#363636;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 15px;
+    padding: 0px 10px;
+    margin: 20px 10px;
+}
+
+/*链接卡片悬停效果*/
+.card:hover {
+    width: 410px;
+    height: 160px;
+    box-shadow: 5px 5px 5px black;
+}
+
+/*头像边距*/
+.avatar {
+    margin: 10px;
+}
+
+/*链接头像*/
+.link_avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    transition: all 2s;
+}
+
+/*链接头像旋转*/
+.link_avatar:hover {
+    transform: rotate(360deg);
+}
+
+/*链接标题*/
+.link_title {
+    color: darkorange;
+    text-decoration: none;
+}
+
+/*链接标题悬停效果*/
+.link_title:hover {
+    color: purple;
+}
+
+/*字体设置*/
+.link_about {
+    color: white;
+    font-size: 15px;
+}
+

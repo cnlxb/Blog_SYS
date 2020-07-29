@@ -1,0 +1,44 @@
+.about {
+    width: 500px;
+    background-color: white;
+    margin: 20px auto;
+    padding: 20px 30px;
+    border-radius: 10px;
+}
+
+.about_icon {
+    text-align: center;
+}
+
+/*社交按钮*/
+.social {
+    margin: 10px;
+    padding: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: whitesmoke;
+}
+
+.social:hover {
+    background-color: skyblue;
+}
+
+.about_message {
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.about_avatar {
+    margin: 10px auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    transition: all 2.0s;
+}
+
+.about_avatar:hover {
+    transform: rotate(360deg);
+}

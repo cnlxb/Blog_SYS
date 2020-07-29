@@ -1,0 +1,60 @@
+.bg {
+    width: 800px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/*卡片视图*/
+.card {
+    width: 700px;
+    height: 200px;
+    background-color: white;
+    margin: 20px 0px;
+    padding: 0px 0px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.avatar {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.card_avatar {
+    border-radius: 15px;
+}
+
+.message {
+    margin: 0px auto;
+    padding: 0px 0px 0px 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+/*卡片视图悬浮效果*/
+.card:hover {
+    box-shadow: 5px 5px 5px black;
+}
+
+/*文章标题*/
+.article_title {
+    color: black;
+    text-decoration: none;
+}
+
+/*文章标题悬浮效果*/
+.article_title:hover {
+    font-size: 35px;
+}
+
+/*文章信息*/
+.article_message {
+    font-size: 15px;
+    color: gray;
+}

@@ -1,0 +1,40 @@
+<link rel="stylesheet" href="/static/css/about.css" type="text/css">
+
+{% extends "base_2.html" %}
+{% block title %}关于{% endblock title %}
+{% block content %}
+    <div class="about">
+        <div class="about_icon">
+            <!-- 头像 -->
+            <img src="/static/images/刘小备.jpg" alt="头像" class="about_avatar"> <br>
+
+            <!-- 社交按钮 -->
+            <a href="https://github.com/cnlxb" target="_blank"><img src="/static/images/github.png" alt="github" class="social"></a>
+            <a href="https://www.zhihu.com/people/13734013012" target="_blank" ><img src="/static/images/zhihu.png" alt="知乎" class="social"></a>
+            <a href="https://space.bilibili.com/382666969" target="_blank"><img src="/static/images/bilibili.png" alt="哔哩哔哩" class="social"></a>
+            <a href="mailto:940329965@qq.com" target="_blank"><img src="/static/images/email.png" alt="邮箱" class="social"></a>
+            <a href="/static/images/wechat.jpg" target="_blank"><img src="/static/images/wechat.png" alt="微信" class="social"></a>
+        </div>
+        
+
+        <!-- 自我介绍 -->
+        <div class="about_messgae">
+            <h3>-关于我-</h3>
+            <hr>
+            <p class="introduce">
+                &nbsp &nbsp &nbsp 大家好，我是刘小备，一名热爱美食热爱掌勺的95后，同时也是一名没有技术的技术宅。
+                目前就职于山西某建筑企业。Python是个人兴趣所在进行自学的，本站也是基于Python
+                的Django框架搭建而成的。希望能够结交更多相同兴趣爱好的人。
+            </p>
+
+            <h3>-关于本站-</h3>
+            <hr>
+            <p class="introduce">
+                &nbsp &nbsp &nbsp 本站是基于Python的Django框架以及自己自学的一点HTML+CSS前端知识搭建的个人博客，
+                因为前端知识有限所以界面比较简陋，目前本站利用FRP内网穿透部署于自己的树莓派上。本站仍有许多不足，
+                如果大家对本站有宝贵的意见，欢迎在留言板留言，本人将会认真读取并对本站进行改进。
+            </p>
+
+        </div>
+    </div>
+{% endblock content %}

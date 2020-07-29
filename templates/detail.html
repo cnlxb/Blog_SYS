@@ -1,0 +1,33 @@
+<link rel="stylesheet" href="/static/css/detail.css" type="text/css">
+
+{% extends "base_2.html" %}
+
+{% block content %}
+
+    <div class="bg">
+
+        <div class="article_catelog">
+            <h3 class="catelog_title">
+                -文章目录-
+            </h3>
+            <p class="catelog_body">
+                {{post.toc | safe}}
+            </p>
+        </div>
+    
+        <div class="article_area">
+            <h2 class="article_title">
+                {{post.title}}
+            </h2>
+            <p class="article_message">
+                创建于：{{post.create_time}} | 分类：{{post.category}}
+            </p>
+            <p class="article_body">
+                {{post.body | safe}}
+            </p>
+            <a href="/" class="back">« 返回</a>
+        </div>
+
+    </div>
+    
+{% endblock content %}

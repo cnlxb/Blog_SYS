@@ -1,0 +1,30 @@
+<link rel="stylesheet" href="/static/css/comments.css" type="text/css">
+
+{% extends "base_2.html" %}
+{% block title %}留言板{% endblock title %}
+
+{% block content %}
+
+    <div class="comment_box">
+
+        <div class="comment">
+            <form action="comment" method="POST" class="form">
+                {% csrf_token %}
+                {{form}} <br>
+                <input type="submit" value="留言" class="submit">
+            </form>
+        </div>
+
+        <div class="message">
+            {% for comment in comments %}
+                <div class="card_box">
+                    <h3 class="name">{{comment.name}}</h3>
+                    <p class="text">{{comment.text}}</p>
+                    <p class="time">{{comment.create_time}}</p>
+                </div>
+            {% endfor %}
+        </div>
+
+    </div>
+
+{% endblock content %}  

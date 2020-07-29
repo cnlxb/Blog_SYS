@@ -1,0 +1,72 @@
+.comment_box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 600px;
+    margin: 20px auto;
+}
+
+/*评论栏*/
+.comment {
+    display: flex;
+    flex-direction: column;
+    line-height: 40px;
+}
+
+/*标签格式*/
+label {
+    display: block;
+    font-size: 20px;
+}
+
+/*输入框格式*/
+input {
+    width: 300px;
+    height: 25px;
+}
+
+/*留言按钮格式*/
+.submit {
+    width: 80px;
+    height: 30px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    font-size: 15px;
+    margin: 15px;
+}
+
+/*留言展示区*/
+.card_box {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    margin: 20px auto;
+    background-color: white;
+}
+
+/*留言展示区悬浮效果*/
+.card_box:hover {
+    box-shadow: 5px 5px 5px black;
+}
+
+/*昵称*/
+.name {
+    padding: 10px 20px;
+    margin: 0px;
+    font-style: italic;
+    background-color: #00C5CD;
+}
+
+/*留言内容*/
+.text {
+    height: 100px;
+    padding: 5px 10px;
+}
+
+/*留言时间*/
+.time {
+    padding: 5px 20px;
+    margin: 0px;
+    background-color: #00C5CD;
+}

@@ -1,0 +1,23 @@
+{% load blog_extras %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} {% endblock title %}</title>
+    <link rel="stylesheet" href="/static/css/base.css" type="text/css">
+</head>
+<body>
+    <div class="head">
+        {% include "header.html" %}
+    </div>
+  
+    <div class="page">
+        {% block content %} {% endblock content %}
+    </div>
+
+    <div class="foot">
+        {% include "footer.html" %}
+    </div>
+</body>
+</html>

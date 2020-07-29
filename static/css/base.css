@@ -1,0 +1,184 @@
+html {
+    height: 100%;
+}
+body {
+    background-color: skyblue;
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0px;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/*头部盒模型*/
+.head {
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/*Logo*/
+.top_logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 5px 30px;
+    transition: all 2.0s;
+}
+
+.top_logo:hover {
+    transform: rotate(360deg);
+}
+
+/*顶部标题*/
+.top_title {
+    color: white;
+    text-decoration: none;
+    font-style: italic;
+}
+
+/*顶部标题悬停效果*/
+.top_title:hover {
+    color: gray;
+}
+
+/*导航栏*/
+.navigation {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+/*导航菜单*/
+.menu {
+    color: white;
+    text-decoration: none;
+    padding: 5px 40px;
+}
+
+/*导航菜单悬停效果*/
+.menu:hover {
+    background-color: white;
+    color: black;
+}
+
+.page {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+/*侧边栏*/
+.side {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    margin: 30px 40px;
+}
+
+/*侧边栏分类*/
+.category {
+    background-color: white;
+    width: 250px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+/*侧边栏分类悬浮效果*/
+.category:hover {
+    box-shadow: 5px 5px 5px black;
+}
+
+/*侧边栏标签*/
+.tags {
+    background-color: white;
+    width: 250px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+/*侧边栏标签悬浮效果*/
+.tags:hover {
+    box-shadow: 5px 5px 5px black;
+}
+
+/*侧边栏归档*/
+.archive {
+    background-color: white;
+    width: 250px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+/*侧边栏归档悬浮效果*/
+.archive:hover {
+    box-shadow: 5px 5px 5px black;
+}
+
+/*页脚盒模型*/
+.foot {
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    padding: 2px 0px;
+}
+
+/*页脚信息*/
+.foot_message {
+    color: white;
+    font-size: 15px;
+}
+
+/*备案信息*/
+.record {
+    color: white;
+    text-decoration: none;
+}
+
+/*备案信息悬停效果*/
+.record:hover {
+    color: orange;
+}
+
+
+/*表单*/
+#searchform {
+    margin: 0px;
+    padding: 0px;
+}
+
+/*搜索框*/
+.search {
+    width: 200px;
+    height: 35px;
+    margin: 0px 5px 0px 300px;
+    padding: 0px;
+    border-radius: 15px;
+}
+
+/*搜索键*/
+.search_button {
+    width: 80px;
+    height: 35px;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+.search_button:hover {
+    background-color: white;
+    color: black;
+}
