@@ -11,3 +11,8 @@ class PostAdmin(admin.ModelAdmin):
 admin.site.register(Post, PostAdmin)
 admin.site.register(Category)
 admin.site.register(Tag)
+
+
+#修改网页title和站点header。
+admin.site.site_title = "后台管理"
+admin.site.site_header = "刘小备_Blog"

@@ -3,6 +3,10 @@ from .models import *
 import markdown
 from django.contrib import messages
 from django.db.models import Q
+from markdown.extensions.toc import TocExtension
+from django.utils.text import slugify
+import re
+
 # Create your views here.
 def index(request):
     post_list = Post.objects.all()
@@ -11,13 +15,17 @@ def index(request):
 # 文章详情页
 def detail(request,pk):
     post = Post.objects.get(pk=pk)
+    post.increase_views() #阅读量+1
     md = markdown.Markdown(extensions=[
         'markdown.extensions.extra',
         'markdown.extensions.codehilite',
-        'markdown.extensions.toc',
+        'markdown.extensions.sane_lists',
+        TocExtension(slugify=slugify),
     ])
     post.body = md.convert(post.body)
-    post.toc = md.toc
+    
+    m = re.search(r'<div class="toc">\s*<ul>(.*)</ul>\s*</div>', md.toc, re.S)
+    post.toc = m.group(1) if m is not None else ''
     return render(request,'detail.html',locals())
 
 

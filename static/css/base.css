@@ -1,11 +1,13 @@
 html {
     height: 100%;
 }
+
 body {
     background-color: skyblue;
     background-attachment: fixed;
     background-size: cover;
     margin: 0px;
+    padding: 0px;
     min-height: 100%;
     display: flex;
     flex-direction: column;
@@ -67,30 +69,44 @@ body {
     color: black;
 }
 
+/*中间页*/
 .page {
     width: 100%;
+    margin: 20px auto;
+    padding: 0px;
     flex: 1;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 20px auto;
 }
 
 /*侧边栏*/
 .side {
-    width: 20%;
+    flex: 0 0 200px;
     display: flex;
     flex-direction: column;
-    margin: 30px 40px;
+    margin: 0px 20px;
+    flex-wrap: wrap;
+}
+
+/*内容栏*/
+.content {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0px 20px;
 }
 
 /*侧边栏分类*/
 .category {
     background-color: white;
-    width: 250px;
+    width: 100%;
     padding: 10px;
-    margin: 10px;
+    margin: 20px 0px;
     border-radius: 10px;
 }
 
@@ -102,9 +118,9 @@ body {
 /*侧边栏标签*/
 .tags {
     background-color: white;
-    width: 250px;
+    width: 100%;
     padding: 10px;
-    margin: 10px;
+    margin: 20px 0px;
     border-radius: 10px;
 }
 
@@ -113,12 +129,13 @@ body {
     box-shadow: 5px 5px 5px black;
 }
 
+
 /*侧边栏归档*/
 .archive {
     background-color: white;
-    width: 250px;
+    width: 100%;
     padding: 10px;
-    margin: 10px;
+    margin: 20px 0px;
     border-radius: 10px;
 }
 
@@ -163,7 +180,7 @@ body {
 .search {
     width: 200px;
     height: 35px;
-    margin: 0px 5px 0px 300px;
+    margin: 0px 5px 0px 50px;
     padding: 0px;
     border-radius: 15px;
 }
@@ -182,3 +199,4 @@ body {
     background-color: white;
     color: black;
 }
+

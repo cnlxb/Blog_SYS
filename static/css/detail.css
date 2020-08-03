@@ -1,17 +1,19 @@
 /*文章背景*/
 .bg {
-    width: 1400px;
+    width: 100%;
     display: flex;
-    flex-direction: row;
-    margin: 20px auto;
+    padding: 0px 30px;
 }
 
 /*目录区域*/
 .article_catelog {
-    width: 300px;
-    height: auto;
+    width: 20%;
     background-color: white;
-    position: fixed;
+    padding: 20px;
+    font-weight: 550;
+    margin: 0px auto;
+    border-right: solid 2px black;
+    flex: 0 0 200px;
 }
 
 /*目录标题格式*/
@@ -21,7 +23,6 @@
 
 /*文章目录*/
 li {
-    list-style-type: none;
     padding: 2px 5px;
 }
 
@@ -38,9 +39,10 @@ a:hover {
 /*文章区域*/
 .article_area {
     background-color: white;
-    width: 1000px;
+    width: 80%;
     padding: 30px 50px;
-    margin-left: 400px;
+    margin: 0px auto;
+    flex: 1;
 }
 
 /*文章题目格式*/

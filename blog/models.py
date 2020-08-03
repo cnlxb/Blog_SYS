@@ -33,9 +33,14 @@ class Post(models.Model):
     category = models.ForeignKey(Category, verbose_name='文章分类', on_delete=models.CASCADE)
     tags = models.ManyToManyField(Tag, verbose_name='文章标签', blank=True)
     author = models.ForeignKey(User, verbose_name='作者', on_delete=models.CASCADE)
+    views = models.PositiveIntegerField('阅读量',default=0, editable=False)
 
     class Meta:
         verbose_name = '文章'
         verbose_name_plural = verbose_name
     def __str__(self):
         return self.title
+
+    def increase_views(self):
+        self.views += 1
+        self.save(update_fields=['views'])

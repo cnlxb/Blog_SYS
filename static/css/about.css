@@ -2,8 +2,9 @@
     width: 500px;
     background-color: white;
     margin: 20px auto;
-    padding: 20px 30px;
+    padding: 20px 20px;
     border-radius: 10px;
+    text-align: center;
 }
 
 .about_icon {
@@ -25,10 +26,10 @@
 }
 
 .about_message {
+    width: 100%;
     text-align: start;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
 }
 
 .about_avatar {
@@ -41,4 +42,8 @@
 
 .about_avatar:hover {
     transform: rotate(360deg);
+}
+
+.word {
+    text-align: start;
 }

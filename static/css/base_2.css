@@ -69,6 +69,7 @@ body {
 
 .page {
     flex: 1;
+    width: 100%;
 }
 
 
@@ -95,4 +96,28 @@ body {
 /*备案信息悬停效果*/
 .record:hover {
     color: orange;
+}
+
+/*搜索框*/
+.search {
+    width: 200px;
+    height: 35px;
+    margin: 0px 5px 0px 50px;
+    padding: 0px;
+    border-radius: 15px;
+}
+
+/*搜索键*/
+.search_button {
+    width: 80px;
+    height: 35px;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+.search_button:hover {
+    background-color: white;
+    color: black;
 }
