@@ -1,202 +1,60 @@
 html {
-    height: 100%;
+    margin: 0px;
+    padding: 0px;
 }
 
 body {
-    background-color: skyblue;
-    background-attachment: fixed;
-    background-size: cover;
+    background-color: white;
+    height: 100%;
     margin: 0px;
     padding: 0px;
-    min-height: 100%;
+    background-attachment: fixed;
+}
+
+/*页面左侧*/
+.left {
+    background-image: url(/static/images/bg.jpg);
+    background-size: cover;
+    width: 35%;
+    height: 100%;
+    float: left;
+    position: fixed;
+    top: 0px;
+    left: 0px;
     display: flex;
     flex-direction: column;
 }
 
-/*头部盒模型*/
-.head {
-    width: 100%;
-    background-color: black;
+/*页面右侧*/
+.right {
+    width: 65%;
+    height: 100%;
+    float: right;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+/*左侧页面分类栏*/
+.category {
+    width: 80%;
+    margin: 40px auto 0px auto;
+    padding: 0px;
+}
+
+/*左侧页面中间页*/
+.body {
+    flex: 1;
+}
+
+/*左侧页面页脚*/
+.foot {
+    text-align: center;
+}
+
+/*右侧内容边距*/
+.body {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
-
-/*Logo*/
-.top_logo {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin: 5px 30px;
-    transition: all 2.0s;
-}
-
-.top_logo:hover {
-    transform: rotate(360deg);
-}
-
-/*顶部标题*/
-.top_title {
-    color: white;
-    text-decoration: none;
-    font-style: italic;
-}
-
-/*顶部标题悬停效果*/
-.top_title:hover {
-    color: gray;
-}
-
-/*导航栏*/
-.navigation {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    list-style-type: none;
-}
-
-/*导航菜单*/
-.menu {
-    color: white;
-    text-decoration: none;
-    padding: 5px 40px;
-}
-
-/*导航菜单悬停效果*/
-.menu:hover {
-    background-color: white;
-    color: black;
-}
-
-/*中间页*/
-.page {
-    width: 100%;
-    margin: 20px auto;
-    padding: 0px;
-    flex: 1;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-/*侧边栏*/
-.side {
-    flex: 0 0 200px;
-    display: flex;
-    flex-direction: column;
-    margin: 0px 20px;
-    flex-wrap: wrap;
-}
-
-/*内容栏*/
-.content {
-    width: 60%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
-    margin: 0px 20px;
-}
-
-/*侧边栏分类*/
-.category {
-    background-color: white;
-    width: 100%;
-    padding: 10px;
-    margin: 20px 0px;
-    border-radius: 10px;
-}
-
-/*侧边栏分类悬浮效果*/
-.category:hover {
-    box-shadow: 5px 5px 5px black;
-}
-
-/*侧边栏标签*/
-.tags {
-    background-color: white;
-    width: 100%;
-    padding: 10px;
-    margin: 20px 0px;
-    border-radius: 10px;
-}
-
-/*侧边栏标签悬浮效果*/
-.tags:hover {
-    box-shadow: 5px 5px 5px black;
-}
-
-
-/*侧边栏归档*/
-.archive {
-    background-color: white;
-    width: 100%;
-    padding: 10px;
-    margin: 20px 0px;
-    border-radius: 10px;
-}
-
-/*侧边栏归档悬浮效果*/
-.archive:hover {
-    box-shadow: 5px 5px 5px black;
-}
-
-/*页脚盒模型*/
-.foot {
-    width: 100%;
-    background-color: black;
-    text-align: center;
-    padding: 2px 0px;
-}
-
-/*页脚信息*/
-.foot_message {
-    color: white;
-    font-size: 15px;
-}
-
-/*备案信息*/
-.record {
-    color: white;
-    text-decoration: none;
-}
-
-/*备案信息悬停效果*/
-.record:hover {
-    color: orange;
-}
-
-
-/*表单*/
-#searchform {
-    margin: 0px;
-    padding: 0px;
-}
-
-/*搜索框*/
-.search {
-    width: 200px;
-    height: 35px;
-    margin: 0px 5px 0px 50px;
-    padding: 0px;
-    border-radius: 15px;
-}
-
-/*搜索键*/
-.search_button {
-    width: 80px;
-    height: 35px;
-    background-color: black;
-    color: white;
-    border: 2px solid white;
-    border-radius: 5px;
-}
-
-.search_button:hover {
-    background-color: white;
-    color: black;
-}
-

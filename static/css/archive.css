@@ -1,0 +1,36 @@
+.archive {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    border-bottom: 1px gray dashed;
+}
+
+/*时间轴左侧*/
+.archive_left {
+    margin: 0px;
+}
+
+/*时间轴右侧*/
+.archive_right {
+    margin: 0px;
+}
+
+/*文章题目*/
+.archive_href {
+    padding: 5px 10px;
+    text-decoration: none;
+    color: black;
+}
+
+/*文章题目悬停效果*/
+.archive_href:hover {
+    font-weight: 600;
+}
+
+.archive_title {
+    margin: 0px;
+}

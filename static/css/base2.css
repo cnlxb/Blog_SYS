@@ -1,0 +1,53 @@
+html {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: white;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-attachment: fixed;
+}
+
+/*页面左侧*/
+.left {
+    background-image: url(/static/images/bg.jpg);
+    background-size: cover;
+    width: 35%;
+    height: 100%;
+    float: left;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+/*页面右侧*/
+.right {
+    width: 65%;
+    height: 100%;
+    float: right;
+    display: flex;
+    flex-direction: column;
+}
+
+/*左侧页面中间页*/
+.body {
+    flex: 1;
+}
+
+/*左侧页面页脚*/
+.foot {
+    text-align: center;
+}
+
+/*右侧内容边距*/
+.body {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

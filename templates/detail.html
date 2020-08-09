@@ -1,65 +1,24 @@
 <link rel="stylesheet" href="/static/css/detail.css" type="text/css">
-<link href="https://cdn.bootcss.com/highlight.js/9.15.8/styles/github.min.css" rel="stylesheet">
-<style>
-    .codehilite {
-        padding: 0;
-    }
 
-    /* for block of numbers */
-    .hljs-ln-numbers {
-        -webkit-touch-callout: none;
-        -webkit-user-select: none;
-        -khtml-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-
-        text-align: center;
-        color: #ccc;
-        border-right: 1px solid #CCC;
-        vertical-align: top;
-        padding-right: 5px;
-    }
-
-    .hljs-ln-n {
-        width: 30px;
-    }
-
-    /* for block of code */
-    .hljs-ln .hljs-ln-code {
-        padding-left: 10px;
-        white-space: pre;
-    }
-</style>
-{% extends "base_2.html" %}
+{% extends "base2.html" %}
 
 {% block content %}
+    <div class='article'>
+        <h1 class="article_title">{{post.title}}</h1>
+        <p class="article_message">
+            {{post.create_time}}发布 | 分类：{{post.category}} | <img src="/static/images/eye.png" alt="eye" class="eye"> {{ post.views }}
+        </p>
 
-    <div class="bg">
-        <!-- 文章目录 -->
-        <div class="article_catelog">
-            <h3 class="catelog_title">
-                -文章目录-
-            </h3>
-            <p class="catelog_body">
-                {{post.toc | safe}}
-            </p>
-        </div>
+        <br>
+
+        <p article_content>
+            {{post.body | safe}}
+        </p>
         
-        <!-- 文章正文 -->
-        <div class="article_area">
-            <h2 class="article_title">
-                {{post.title}}
-            </h2>
-            <p class="article_message">
-                创建于：{{post.create_time}} | 分类：{{post.category}} | <span class="views-count">{{ post.views }} 阅读</span>
-            </p>
-            <p class="article_body">
-                {{post.body | safe}}
-            </p>
-            <a href="/" class="back">« 返回</a>
-        </div>
-
+        <br>
+        
+        <p>
+            <a href="/" class="back">« 返回首页</a>
+        </p>
     </div>
-    
 {% endblock content %}

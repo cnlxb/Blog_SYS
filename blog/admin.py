@@ -10,7 +10,6 @@ class PostAdmin(admin.ModelAdmin):
 
 admin.site.register(Post, PostAdmin)
 admin.site.register(Category)
-admin.site.register(Tag)
 
 
 #修改网页title和站点header。

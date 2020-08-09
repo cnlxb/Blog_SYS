@@ -1,60 +1,52 @@
-/*卡片视图*/
-.card {
-    width: 700px;
-    height: 200px;
-    background-color: white;
-    margin: 20px 0px;
-    padding: 0px 0px;
-    border-radius: 15px;
+.article_card {
+    margin: 30px auto;
+    width: 100%;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
+    padding: 0px 10px;
 }
 
-.avatar {
-    margin: 0px;
-    padding: 0px;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+/*文章信息栏*/
+.article_message {
+    width: 60%;
+    padding: 0px 10px;
 }
 
-.card_avatar {
-    border-radius: 15px;
-}
-
-.message {
-    margin: 0px auto;
-    padding: 0px 0px 0px 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-}
-
-/*卡片视图悬浮效果*/
-.card:hover {
-    box-shadow: 5px 5px 5px black;
+/*文章头像栏*/
+.article_avatar {
+    margin: 0px 10px;
 }
 
 /*文章标题*/
-.article_title {
+.title {
     color: black;
     text-decoration: none;
 }
 
-/*文章标题悬浮效果*/
-.article_title:hover {
-    font-size: 35px;
+.title:hover {
+    font-size: 30px;
+}
+
+/*文章摘要*/
+.about {
+    color: black;
+    font-size: 17px;
 }
 
 /*文章信息*/
-.article_message {
-    font-size: 15px;
+.message {
     color: gray;
+    font-size: 15px;
 }
 
-/*视图眼睛上下居中*/
-.views_count {
-    width: 15;
+/*文章配图*/
+.avatar {
+    border-radius: 3px;
+}
+
+.eye {
+    vertical-align: middle;
 }

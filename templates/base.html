@@ -1,44 +1,32 @@
 {% load blog_extras %}
 
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html>
+<head lang="en">
     <meta charset="UTF-8">
     <title>{% block title %} {% endblock title %}</title>
     <link rel="stylesheet" href="/static/css/base.css" type="text/css">
+    <link rel="shortcut icon" href="/static/images/logo.ico" type="image/x-icon">
 </head>
 <body>
-    <div class="head">
-        {% include "header.html" %}
-    </div>
-  
-    <div class="page">
-        <div class="side">
-            <div class="about">
-                
-            </div>
-
-            <div class="category">
-                {% show_categories %}
-            </div>  
-
-            <div class="tags">
-                {% show_tags %}
-            </div>
-
-            <div class="archive">
-                {% show_archives %}
-            </div>
-        </div>
-
-        <div class="content">
-            {% block content %} {% endblock content %}
-        </div>
-        
+    <div class="left">
+        {% include "menu.html" %}
     </div>
 
-    <div class="foot">
-        {% include "footer.html" %}
+    <div class="right">
+        <div class="category">
+            {% show_categories %}
+        </div>
+
+        <div class="body">
+            {% block content %}
+              
+            {% endblock content %}
+        </div>
+
+        <div class="foot">
+            {% include "footer.html" %}
+        </div>
     </div>
 </body>
 </html>

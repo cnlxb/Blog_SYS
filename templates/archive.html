@@ -1,0 +1,27 @@
+<link rel="stylesheet" href="/static/css/archive.css" type="text/css">
+
+{% extends "base2.html" %}
+
+{% block title %} 时间轴 - 刘小备_Blog {% endblock title %}
+
+{% block content %}
+    <h1>
+        -时间轴-
+    </h1>
+
+    {% for post in post_list %}
+        <div class="archive">
+            <div class="archive_left">
+                <p class="archive_time">
+                    <li>{{post.create_time | date:"Y-m-d"}}</li>
+                </p>
+            </div>
+
+            <div class="archive_right">
+                <p class="archive_title">
+                    <a href="/posts/{{post.pk}}" class="archive_href">{{post.title}}</a>
+                </p>
+            </div>
+        </div>
+    {% endfor %}
+{% endblock content %}

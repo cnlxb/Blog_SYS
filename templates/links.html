@@ -1,0 +1,23 @@
+<link rel="stylesheet" href="/static/css/links.css" type="text/css">
+
+{% extends "base2.html" %}
+
+{% block title %} 友情链接 - 刘小备_Blog {% endblock title %}
+
+{% block content %}
+    <h1>
+        -友情链接-
+    </h1>
+    {% for link in link_list %}
+        <div class="link_card">
+            <div class="link_left">
+                <img src=/{{link.avatar}} alt="头像" class="link_avatar">
+            </div>
+
+            <div class="link_right">
+                <h2><a href="{{link.url}}" target="_blank" class="link_title">{{link.name}}</a></h2>
+                <p class="link_about">{{link.about}}</p>
+            </div>
+        </div>
+    {% endfor %}
+{% endblock content %}

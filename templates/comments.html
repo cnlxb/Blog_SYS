@@ -1,30 +1,47 @@
 <link rel="stylesheet" href="/static/css/comments.css" type="text/css">
 
-{% extends "base_2.html" %}
-{% block title %}留言板{% endblock title %}
+{% extends "base2.html" %}
+
+{% block title %} 留言板 - 刘小备_Blog {% endblock title %}
 
 {% block content %}
+    <h1>
+        -留言板-
+    </h1>
 
-    <div class="comment_box">
-
-        <div class="comment">
-            <form action="comment" method="POST" class="form">
-                {% csrf_token %}
-                {{form}} <br>
-                <input type="submit" value="留言" class="submit">
-            </form>
-        </div>
-
-        <div class="message">
-            {% for comment in comments %}
-                <div class="card_box">
-                    <h3 class="name">{{comment.name}}</h3>
-                    <p class="text">{{comment.text}}</p>
-                    <p class="time">{{comment.create_time}}</p>
-                </div>
-            {% endfor %}
-        </div>
-
+    <div class="submit">
+        <form action={% url 'comment' %} method="POST" class="submit_form">
+            {% csrf_token %}
+            {{ form }}
+            <br>
+            <input type="submit" value="提交留言" class="submit_button">
+        </form>
     </div>
 
-{% endblock content %}  
+    <div class="show">
+        {% for comment in comments %}
+            <div class="comment_card">
+                <div class="on">
+                    <div class="comment_avatar">
+                        <img src="/static/images/people.png" alt="头像">
+                    </div>
+                    <div class="comment_message">
+                        <h3 class="comment_author">
+                            {{comment.name}}
+                        </h3>
+                        <p class="comment_time">
+                            {{comment.create_time}} 说：
+                        </p>
+                    </div>
+                </div>
+
+                <div class="down">
+                    <p class="comment_text">
+                        {{comment.text}}
+                    </p>
+                </div>
+            </div>      
+        {% endfor %}
+    </div>
+
+{% endblock content %}

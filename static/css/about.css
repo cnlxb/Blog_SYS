@@ -1,49 +1,57 @@
-.about {
-    width: 500px;
-    background-color: white;
-    margin: 20px auto;
-    padding: 20px 20px;
-    border-radius: 10px;
-    text-align: center;
-}
-
-.about_icon {
-    text-align: center;
-}
-
-/*社交按钮*/
-.social {
-    margin: 10px;
-    padding: 10px;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: whitesmoke;
-}
-
-.social:hover {
+.about_card {
+    width: 80%;
     background-color: skyblue;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
 }
 
-.about_message {
-    width: 100%;
-    text-align: start;
-    display: flex;
-    flex-direction: column;
+/*标题*/
+.about_title {
+    width: 50%;
+
 }
 
-.about_avatar {
-    margin: 10px auto;
+/*本站介绍*/
+.about_web {
+    line-height: 30px;
+}
+
+/*打赏码*/
+.reward_img {
+    width: 200px;
+    height: 200px;
+}
+
+/*下划线*/
+.line {
+    border: solid black 1.5px;
+}
+
+.about_me {
+    text-align: center;
+}
+
+/*头像*/
+.about_head {
     width: 100px;
     height: 100px;
     border-radius: 50%;
     transition: all 2.0s;
 }
 
-.about_avatar:hover {
+.about_head:hover {
     transform: rotate(360deg);
 }
 
-.word {
-    text-align: start;
+/*社交按钮*/
+.social {
+    margin: 20px 10px;
+    padding: 8px;
+    border-radius: 50%;
+}
+
+/*社交按钮悬停效果*/
+.social:hover {
+    background-color: black;
 }

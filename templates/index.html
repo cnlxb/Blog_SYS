@@ -1,25 +1,32 @@
 <link rel="stylesheet" href="/static/css/index.css" type="text/css">
 
 {% extends "base.html" %}
-{% block title %}首页{% endblock title %}
+
+{% block title %} 首页 - 刘小备_Blog {% endblock title %}
 
 {% block content %}
     {% for post in post_list %}
-        <div class="card">
-            <div class="avatar">
-                <img src="/{{post.picture}}" alt="文章配图" width="300" height="200" class="card_avatar">
-            </div>
+        <div class="article_card"> 
 
-            <div class="message">
-                <h2><a href={% url 'detail' post.pk %} class="article_title">{{post.title}}</a></h2>
+            <div class="article_message">
+                <h2><a href="/posts/{{post.pk}}" class="title">{{post.title}}</a></h2>
+            
+                <p class='about'>
+                    {{post.about}}
+                </p>
 
-                <p class="article_message">
-                    创建于：{{post.create_time}} | 分类：{{post.category}} <br>
-                    标签：{{post.tags.all | join:", "}} <br>
-                    <img src="/static/images/eyes.png" alt="eyes" class="views_count"> {{ post.views }}
+                <p class="message">
+                    {{post.create_time}}发布 | 分类：{{post.category}} | <img src="/static/images/eye.png" alt="eye" class="eye"> {{ post.views }}
                 </p>
             </div>
-                
+
+            <div class="article_avatar">
+                <img src=/{{post.picture}} alt="文章配图" width="250" height="125" class="avatar">
+            </div>
+
+        
         </div>
     {% endfor %}
+    
+
 {% endblock content %}
