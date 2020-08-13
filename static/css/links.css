@@ -1,25 +1,24 @@
 /*链接卡片*/
 .link_card {
     margin: 20px auto;
-    width: 50%;
+    width: 60%;
     padding: 20px;
-    background-color: skyblue;
+    background-color: whitesmoke;
     border-radius: 10px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-}
-
-/*链接卡片悬停效果*/
-.link_card:hover {
     box-shadow: 5px 5px 5px black;
 }
 
+
 /*链接卡片左侧*/
 .link_left {
-    width: 30%;
+    width: 35%;
+    margin: 10px;
+    text-align: center;
 }
 
 /*链接卡片右侧*/

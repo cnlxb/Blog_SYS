@@ -1,6 +1,7 @@
 html {
     margin: 0px;
     padding: 0px;
+    border: none;
 }
 
 body {
@@ -37,8 +38,11 @@ body {
 /*左侧页面分类栏*/
 .category {
     width: 80%;
-    margin: 40px auto 0px auto;
+    margin: 30px auto;
     padding: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 /*左侧页面中间页*/

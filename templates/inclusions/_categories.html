@@ -5,12 +5,12 @@
     padding: 5px 10px;
     background-color: black;
     border-radius: 5px;
-    margin: 0px 5px;
+    margin: 5px;
   }
 </style>
 
 {% for category in category_list %}
-  <a href={% url 'category' category.pk %} class="category_list">{{ category.name }}</a>
+  <a href={% url 'category' category.pk %} class="category_list">{{ category.name }} ({{ category.num_posts }})</a>
 {% empty %}
   暂无分类！
 {% endfor %}

@@ -1,0 +1,160 @@
+/*菜单模型*/
+.menu {
+    margin: 0px auto;
+    text-align: center;
+    width: 100%;
+    padding: 80px 0px;
+}
+
+/*头像*/
+.head {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: solid 2px gray;
+    transition: all 2.0s;
+}
+
+/*头像悬停效果*/
+.head:hover {
+    transform: rotate(360deg);
+}
+
+/*网站标题旋转*/
+.web_title {
+    transition: all 1.0s;
+}
+
+/*网站标题悬停效果*/
+.web_title:hover {
+    transform: rotate(15deg);
+}
+
+/*网站标题*/
+.blog_title {
+    text-decoration: none;
+    font-style: italic;
+    font-weight: 500; 
+    color: whitesmoke;
+}
+
+    
+/*自我介绍*/
+    .introduce {
+    margin: 30px 0px;
+    color: WhiteSmoke;
+    text-align: start;
+    padding: 0px 80px;
+    line-height: 30px;
+}
+
+
+/*搜索框*/
+    .search {
+    width: 40%;
+    height: 30px;
+    background-color: white;
+    margin: 50px auto;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.search_input {
+    width: 80%;
+    margin: 5px 0px;
+    position: relative;
+    display: inline-block;
+    font-size: 15px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+
+.search_button {
+    background-color: White;
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+    vertical-align: middle;
+}
+    
+
+/*导航栏*/
+.list {
+    margin: 0px 8px;
+    padding: 8px;
+}
+
+.list:hover {
+    background-color: gray;
+    border-radius: 50%;
+}
+
+
+/*响应式导航栏*/
+@media screen and (max-width: 768px) {
+    html {
+        margin: 0px;
+        padding: 0px;
+        border: 0px;
+    }
+    
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+        margin: 0px;
+        border: 0px;
+        overflow-x: hidden;
+    }
+
+    .left {
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        position: static;
+        padding: 0px;
+        outline: 0px;
+    }
+
+    .right {
+        width: 90%;
+        margin: 0px auto;
+        position: static;
+        outline: 0px;
+    }
+
+    .menu {
+        width: 100%;
+        padding: 10px 0px;
+        margin: 0px auto;
+        outline: 0px;
+    }
+
+    .body {
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        border: none;
+    }
+
+    .introduce {
+        display: none;
+    }
+
+    .search {
+        margin: 20px auto;
+    }
+
+    .about_picture {
+        display: none;
+    }
+}

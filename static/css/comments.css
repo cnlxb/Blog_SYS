@@ -23,15 +23,15 @@
 
 /*留言展示卡片*/
 .comment_card {
-    width: 100%;
-    background-color:skyblue;
+    width: 80%;
+    background-color:whitesmoke;
     margin: 30px auto;
-    padding: 30px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     border-radius: 5px;
-    box-shadow: 5px 5px 5px black;
+    box-shadow: 10px 10px 5px black;
 }
 
 /*留言卡上侧*/

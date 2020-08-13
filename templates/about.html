@@ -6,30 +6,40 @@
 
 {% block content %}
 
-    <div class="about_card">
-        <div class="about_me">
-            <img src="/static/images/刘小备.jpg" alt="头像" class="about_head">
-            <br>
-            <a href="https://github.com/cnlxb" target="_blank"><img src="/static/images/github.png" alt="github" class="social"></a>
-            <a href="https://www.zhihu.com/people/13734013012" target="_blank" ><img src="/static/images/zhihu.png" alt="知乎" class="social"></a>
-            <a href="https://space.bilibili.com/382666969" target="_blank"><img src="/static/images/bilibili.png" alt="哔哩哔哩" class="social"></a>
-            <a href="mailto:940329965@qq.com" target="_blank"><img src="/static/images/email.png" alt="邮箱" class="social"></a>
-            <a href="/static/images/wechat.jpg" target="_blank"><img src="/static/images/wechat.png" alt="微信" class="social"></a>
+    <div class='about_me'>
+
+        <div class="about_content">
+            <h2 class='about_menu'>个人简介</h2>
+            <h1 class="about_title">晨 阳</h1>
+            <p class="profession">
+                造价工程师/本站博主
+            </p>
+            <p class="about_introduce">
+                我是晨阳，一名造价工程师，没有技术的技术宅，目前就职于山西省某建筑企业，编程只是业余爱好，平时喜欢Cook，旅游以及研究电子产品。
+            </p>
+            <div class="social_icon">
+                <a href="https://github.com/cnlxb" target="_blank"><img src="/static/images/github.png" alt="github" class="social"></a>
+                <a href="https://www.zhihu.com/people/13734013012" target="_blank" ><img src="/static/images/zhihu.png" alt="知乎" class="social"></a>
+                <a href="https://space.bilibili.com/382666969" target="_blank"><img src="/static/images/bilibili.png" alt="哔哩哔哩" class="social"></a>
+                <a href="mailto:940329965@qq.com" target="_blank"><img src="/static/images/email.png" alt="邮箱" class="social"></a>
+                <a href="/static/images/wechat.jpg" target="_blank"><img src="/static/images/wechat.png" alt="微信" class="social"></a>
+            </div>
         </div>
 
-        <h2 class="about_title">关于本站</h2>
-        <hr class="line">
-        <p class="about_web">
+        <div class="about_picture">
+            <img src="/static/images/me.jpg" alt="照片" class="my_photo">
+        </div>
+
+    </div>
+
+    <div class='about_web'>
+        <h2 class='about_menu'>关于本站</h2>
+        <p class="about_introduce">
             &nbsp &nbsp &nbsp 对于建站，博主在刚开始学Python时就开始有这个想法了，这期间也陆续通过Wordpress和HEXO分别建立过博客，但是始终不是很符合自己的想法，
             于是在这个契机下博主通过Python的Django框架，加上自学的一点前端知识，建立了本站。目前大家看到的本站已经部署在了本人一台闲置的树莓派3B+上。 <br>
             &nbsp &nbsp &nbsp 对本站博主仍在不断的折腾改进当中，但是由于编程是博主利用业余时间基于兴趣爱好进行自学的，所以水平有限，望各位客官多多包涵。
             同时如果大家对本站有任何宝贵意见，欢迎在留言区进行留言。
         </p>
-
-        <h2 class="about_title">生活不易，感谢打赏</h2>
-        <hr class="line">
-        <p class="about_reward">
-            <img src="/static/images/reward.jpg" alt="打赏码" class="reward_img">
-        </p>
     </div>
+
 {% endblock content %}

@@ -1,57 +1,75 @@
-.about_card {
-    width: 80%;
-    background-color: skyblue;
-    margin: 20px auto;
-    padding: 20px;
-    border-radius: 10px;
-}
-
-/*标题*/
-.about_title {
-    width: 50%;
-
-}
-
-/*本站介绍*/
-.about_web {
-    line-height: 30px;
-}
-
-/*打赏码*/
-.reward_img {
-    width: 200px;
-    height: 200px;
-}
-
-/*下划线*/
-.line {
-    border: solid black 1.5px;
-}
-
+/*个人简介*/
 .about_me {
-    text-align: center;
+    background-color: whitesmoke;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 5px 5px 5px black;
+    padding: 30px;
+    margin: 30px auto;
 }
 
-/*头像*/
-.about_head {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    transition: all 2.0s;
+/*内容区域*/
+.about_content {
+    width: 60%;
 }
 
-.about_head:hover {
-    transform: rotate(360deg);
+/*照片区域*/
+.about_picture {
+    width: 30%;
+    justify-content: center;
+    padding: 20px;
 }
 
-/*社交按钮*/
+/*照片大小*/
+.my_photo {
+    width: 100%;
+    height: 70%;
+}
+
+/*职业*/
+.profession {
+    color: gray;
+    font-size: 20px;
+}
+
+/*社交图标*/
 .social {
-    margin: 20px 10px;
     padding: 8px;
     border-radius: 50%;
 }
 
-/*社交按钮悬停效果*/
 .social:hover {
     background-color: black;
 }
+
+
+/*关于本站*/
+.about_web {
+    background-color: whitesmoke;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 5px 5px 5px black;
+    padding: 30px;
+    margin: 30px auto;
+}
+
+/*介绍字体*/
+.about_introduce {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+/*标题下划线*/
+.about_menu {
+    width: 150px;
+    text-align: center;
+    color: skyblue;
+    padding: 0px 0px 8px 0px;
+    border-bottom: solid 2px skyblue;
+}
+
