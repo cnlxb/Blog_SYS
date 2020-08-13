@@ -6,6 +6,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     box-shadow: 5px 5px 5px black;
     padding: 30px;
     margin: 30px auto;
