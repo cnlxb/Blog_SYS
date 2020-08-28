@@ -2,43 +2,49 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>{% block title %} {% endblock title %}</title>
     <link rel="stylesheet" href="/static/css/base2.css" type="text/css">
     <link rel="shortcut icon" href="/static/images/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
     <link href="https://cdn.bootcss.com/highlight.js/9.15.8/styles/github.min.css" rel="stylesheet">
     
-    <style>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style type="text/css">
         .codehilite {
-            padding: 0;
+          padding: 0;
         }
-
+    
         /* for block of numbers */
         .hljs-ln-numbers {
-            -webkit-touch-callout: none;
-            -webkit-user-select: none;
-            -khtml-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-
-            text-align: center;
-            color: #ccc;
-            border-right: 1px solid #CCC;
-            vertical-align: top;
-            padding-right: 5px;
+          -webkit-touch-callout: none;
+          -webkit-user-select: none;
+          -khtml-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+    
+          text-align: center;
+          color: #ccc;
+          border-right: 1px solid #CCC;
+          vertical-align: top;
+          padding-right: 5px;
         }
-
+    
         .hljs-ln-n {
-            width: 30px;
+          width: 30px;
         }
-
+    
         /* for block of code */
         .hljs-ln .hljs-ln-code {
-            padding-left: 10px;
-            white-space: pre;
-        }        
-    </style>
+          padding-left: 10px;
+          white-space: pre;
+        }
+      </style>
 </head>
 <body>
     <div class="left">
@@ -56,11 +62,12 @@
             {% include "footer.html" %}
         </div>
     </div>
+
     <script src="https://cdn.bootcss.com/highlight.js/9.15.8/highlight.min.js"></script>
     <script src="https://cdn.bootcss.com/highlightjs-line-numbers.js/2.7.0/highlightjs-line-numbers.min.js"></script>
     <script>
-      hljs.initHighlightingOnLoad();
-      hljs.initLineNumbersOnLoad();
+        hljs.initHighlightingOnLoad();
+        hljs.initLineNumbersOnLoad();
     </script>
 </body>
 </html>

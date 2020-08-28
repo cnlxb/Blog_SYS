@@ -3,36 +3,23 @@
     background-color: whitesmoke;
     width: 80%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    box-shadow: 5px 5px 5px black;
+    box-shadow: 0px 0px 15px black;
     padding: 30px;
     margin: 30px auto;
 }
 
-/*内容区域*/
-.about_content {
-    width: 60%;
-}
-
-/*照片区域*/
-.about_picture {
-    width: 30%;
-    justify-content: center;
-    padding: 20px;
-}
-
-/*照片大小*/
-.my_photo {
-    width: 100%;
-    height: 80%;
+/*姓名*/
+.about_title {
+    margin: 10px 0px;
 }
 
 /*职业*/
 .profession {
     color: gray;
     font-size: 20px;
+    margin: 10px 0px;
 }
 
 /*社交图标*/
@@ -53,7 +40,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    box-shadow: 5px 5px 5px black;
+    box-shadow: 0px 0px 15px black;
     padding: 30px;
     margin: 30px auto;
 }

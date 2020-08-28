@@ -22,6 +22,7 @@
 
 /*网站标题旋转*/
 .web_title {
+    margin: 20px 0px;
     transition: all 1.0s;
 }
 
@@ -32,6 +33,13 @@
 
 /*网站标题*/
 .blog_title {
+    text-decoration: none;
+    font-style: italic;
+    font-weight: 500; 
+    color: whitesmoke;
+}
+
+.blog_title:hover {
     text-decoration: none;
     font-style: italic;
     font-weight: 500; 
@@ -51,12 +59,7 @@
 
 /*搜索框*/
     .search {
-    width: 40%;
-    height: 30px;
-    background-color: white;
     margin: 50px auto;
-    border: 2px solid black;
-    border-radius: 15px;
     padding: 0px;
     display: flex;
     flex-direction: row;
@@ -86,13 +89,16 @@
 
 /*导航栏*/
 .list {
-    margin: 0px 8px;
-    padding: 8px;
+    margin: 20px;
 }
 
-.list:hover {
-    background-color: gray;
-    border-radius: 50%;
+#list-icon {
+    color: whitesmoke;
+    font-size: 18px;
+}
+
+#list-icon:hover {
+    color: skyblue;
 }
 
 

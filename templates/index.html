@@ -5,28 +5,31 @@
 {% block title %} 首页 - 刘小备_Blog {% endblock title %}
 
 {% block content %}
-    {% for post in post_list %}
-        <div class="article_card"> 
-
-            <div class="article_message">
-                <h2><a href="/posts/{{post.pk}}" class="title">{{post.title}}</a></h2>
-            
-                <p class='about'>
-                    {{post.about}}
-                </p>
-
-                <p class="message">
-                    {{post.create_time}}发布 | 分类：{{post.category}} | <img src="/static/images/eye.png" alt="eye" class="eye"> {{ post.views }}
-                </p>
+    <div class="container-fluid d-flex flex-column align-items-center" >
+        {% for post in post_list %}
+            <div class="card m-2" style="max-width: 48em;" style="border: none;">
+                <div class="row no-gutters">
+                    <!-- 卡片内容 -->
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h4 class="card-title"><a href="/posts/{{post.pk}}" id="article-title"><span class="badge badge-info">{{post.category}}</span> {{post.title}}</a></h4>
+                            <p class="card-text text-muted">{{post.about}}</p>
+                            <p class="card-text text-muted">
+                                <small class="text-muted">
+                                    <i class="fa fa-calendar"></i> {{post.create_time | date:"Y年月d日"}} | 
+                                    <i class="fa fa-eye"></i> {{post.views}} | 
+                                    <i class="fa fa-user-circle"></i> 刘小备
+                                </small>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- 卡片图像 -->
+                    <div class="col-md-4 d-flex flex-column justify-content-center">
+                        <img src="{{MEDIA_URL}}{{post.picture}}" class="card-img" alt="文章配图">
+                    </div>
+                </div>
             </div>
-
-            <div class="article_avatar">
-                <img src=/{{post.picture}} alt="文章配图" width="250" height="125" class="avatar">
-            </div>
-
-        
-        </div>
-    {% endfor %}
-    
+        {% endfor %}
+    </div>
 
 {% endblock content %}

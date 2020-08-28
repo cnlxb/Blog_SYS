@@ -11,7 +11,7 @@
     {% for link in link_list %}
         <div class="link_card">
             <div class="link_left">
-                <img src=/{{link.avatar}} alt="头像" class="link_avatar">
+                <img src='{{MEDIA_URL}}{{link.avatar}}' alt="头像" class="link_avatar">
             </div>
 
             <div class="link_right">

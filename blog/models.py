@@ -16,7 +16,7 @@ class Category(models.Model):
  # 博客文章
 class Post(models.Model):
     title = models.CharField('标题', max_length=70)
-    picture = models.ImageField('图片', upload_to='static/pictures', blank=True)
+    picture = models.ImageField('图片', upload_to='pictures/', blank=True)
     create_time = models.DateTimeField('创建时间',auto_now_add=True)
     about = models.TextField('文章摘要',max_length=200)
     body = models.TextField('文章正文')  

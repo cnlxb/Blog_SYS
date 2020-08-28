@@ -9,24 +9,23 @@
     <h2 class="web_title"><a href="/" class="blog_title">刘小备_Blog</a></h2>
 
     <!-- 导航菜单 -->
-    <a href={% url 'index' %} title="主页" class="list"><img src="/static/images/主页.png" alt="主页" class="list_picture"></a>
-    <a href={% url 'archive' %} title="时间轴" class="list"><img src="/static/images/时间.png" alt="时间" class="list_picture"></a>
-    <a href={% url 'link' %} title="友情链接" class="list"><img src="/static/images/链接.png" alt="链接" class="list_picture"></a>
-    <a href={% url 'comment' %} title="留言板" class="list"><img src="/static/images/留言.png" alt="留言" class="list_picture"></a>
-    <a href={% url 'about' %} title="关于" class="list"><img src="/static/images/关于.png" alt="关于" class="list_picture"></a>
-    <a href="/admin" title="登录" class="list"><img src="/static/images/登录.png" alt="登录" class="list_picture"></a>
+    <a href={% url 'index' %} title="主页" class="list"><i class="fa fa-home" id="list-icon"></i></a>
+    <a href={% url 'archive' %} title="时间轴" class="list"><i class="fa fa-clock-o" id="list-icon"></i></a>
+    <a href={% url 'link' %} title="友情链接" class="list"><i class="fa fa-link" id="list-icon"></i></a>
+    <a href={% url 'comment' %} title="留言板" class="list"><i class="fa fa-pencil" id="list-icon"></i></a>
+    <a href={% url 'about' %} title="关于" class="list"><i class="fa fa-address-card" id="list-icon"></i></a>
 
 
     <!-- 个人介绍 -->
     <p class="introduce">
-        这世上只有一种成功，就是能用自己喜欢的方式过一生。你多学一样本事，就少说一句求人的话。
+        这个世界上其实并没有所谓的最正确的选择，而我们也只有更加努力奋斗，才能使当初的选择变得正确。
     </p>
 
     <!-- 搜索 -->
     <div class="search">
-        <form action={% url 'search' %} method="GET" role="search" id="searchform">
-            <input type="search" name="q" placeholder="Search..." required class="search_input">
-            <button type="submit" class="search_button" title="点击搜索"><img src="/static/images/search.ico" alt="搜索" width="20" height="20"></button>
+        <form class="form-inline" action={% url 'search' %} method="GET" role="search" >
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="q" style="border-radius: 30px;">
+            <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Search</button>
         </form>
     </div>
 
